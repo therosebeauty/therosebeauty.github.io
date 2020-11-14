@@ -1,8 +1,333 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <title>The Rose Beauty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>  
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <!--List of icons https://material.io/resources/icons/?style=baseline -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.3.8/dist/vuetify.min.css" rel="stylesheet">  
+  <link href="./main.css" rel="stylesheet">
+  
+</head>
 <body>
-  <h1>Welcome!</h1>
+
+  <template id="about-template">
+    <v-container fluid grid-list-xl>
+      <v-layout>
+        <v-flex>
+          <h1>About</h1>
+          <p>This is about.</p>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </template>
+
+  <!-- 
+    System requrement
+    Calendar/time
+    Packages/fees
+  -->
+
+  <template id="home-template">
+    <v-container fluid grid-list-xl>
+      <v-layout>
+        <v-flex style="padding: 0px">
+          <v-parallax 
+            jumbotron class="parallax" src="images/banner.jpeg">
+            <h1 class="banner-title">The Rose Beauty</h1>
+            <h1 class="banner-sub-title">Best makeup, mehndi and hair artist in bay area!</h1>
+          </v-parallax>
+
+          <v-row Xno-gutters Xfluid>
+            <v-col Xcols="3" Xmd="4" Xxs="12" class="mt-10 mb-10">
+              <v-card class="mx-auto" max-width="400">
+                <v-img
+                  class="white--text align-end"
+                  height="200px"
+                  src="images/card-1.jpg">
+                </v-img>
+            
+                <!-- <v-card-subtitle class="pb-0">Number 10</v-card-subtitle> -->
+                <v-card-title class="service-desc-title-txt">
+                  Mehendi/Heena
+                </v-card-title>
+          
+                <v-card-text class="text--primary service-desc-txt">
+                  <div>
+                    Highly experienced professional henna (mehndi) artist. Available for corporate events, weddings, functions, festivals, exhibitions and all special occasions. Individual and group bookings. I am specialized in traditional Indian bridal mehandi with over 30 years of experience. Known for very unique and elegant mehandi designs. I create design based on traditional Indian mehandi pattern, Arabic and latest designs. I prepare mehndi paste using natural mehandi powder. 
+
+                  </div>
+                </v-card-text>
+            
+                <!-- <v-card-actions>
+                  <v-btn color="orange" text>Share</v-btn>
+                </v-card-actions> -->
+              </v-card>
+            </v-col>
+
+            <v-col Xcols="3" Xmd="4"  Xxs="12" class="mt-10 mb-10">
+              <v-card class="mx-auto" max-width="400">
+                <v-img
+                  class="white--text align-end"
+                  height="200px"
+                  src="images/card-2.jpg">
+                </v-img>
+                <v-card-title class="service-desc-title-txt">
+                  Age group and schedule 
+                </v-card-title>
+                <v-card-text class="text--primary service-desc-txt">
+                  <div>
+                    Age groups: [4 to 7] and [8 to 12]
+                  </div>
+                  <div>
+                    One hour per week. Call us for adjustable timing.
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col Xcols="3" Xmd="4"  Xxs="12" class="mt-10 mb-10">
+              <v-card class="mx-auto" max-width="400">
+                <v-img
+                  class="white--text align-end"
+                  height="200px"
+                  src="images/card-3.jpg">
+                </v-img>
+                <v-card-title class="service-desc-title-txt text-center">
+                  Get started today
+                </v-card-title>
+                <v-card-text class="text--primary service-desc-txt">
+                  <div>
+                    Call us: 
+                  </div>
+                  <div>
+                    510 471 7132
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+
+
+          <v-row>
+            <v-col>
+              <v-row align="center" justify="center">
+                <v-card class="ma-1 pa-2"  tile>
+                  <v-card-text class="text--primary">
+                    <h2>Payment Plans</h2>
+                  </v-card-text>
+                </v-card>
+              </v-row>
+
+              <v-row align="center" justify="center">
+                <v-card class="ma-3 pa-6 fee-card">
+                  <v-card-text align="center" justify="center" class="text--primary payment-plan-txt">
+                    <h3>Pay per class:</h3>
+                    <h2 class="mt-3">
+                      $15
+                    </h2>
+                  </v-card-text>
+                </v-card>
+
+                <v-card class="ma-3 pa-6 fee-card">
+                  <v-card-text align="center" justify="center" class="text--primary payment-plan-txt">
+                    <h3>Pay per month (4 classes):</h3>
+                    <h2 class="mt-3">
+                      $ 50 
+                    </h2>
+                    <div class="mt-3">[That is $ 12.50 per class]</div>
+                  </v-card-text>
+                </v-card>
+              </v-row>
+            </v-col>    
+          </v-row>
+
+ 
+          <v-row id="free-trial">
+            <v-col>
+              <v-row align="center" justify="center">
+                <v-card class="ma-1 pa-2"  tile>
+                  <v-card-text class="text--primary">
+                    <h2>Free Trial:</h2>
+                    <h3 class="mt-3">Contact us today and get one class free for a new student!</h3>
+                  </v-card-text>
+                </v-card>
+              </v-row>
+            </v-col>    
+          </v-row>
+
+
+
+          <v-row>
+            <v-col cols="12" Xsm="6" Xoffset-sm="3"  class="mt-md-10 mb-md-10">
+              <h2 class="ml-3">Students art gallery</h2>
+              <v-card>
+                <v-container fluid>
+                  <v-row>
+                    <v-col
+                      v-for="n in this.state.gallery.studentsWork.length"
+                      :key="n"
+                      class="d-flex child-flex"
+                      Xcols="2"
+                    >
+                      <v-card flat tile class="d-flex" style="max-width: 200px;">
+                        <v-img
+                          :src="getStudentsWorkImage(n)"
+                          :lazy-src="getStudentsWorkImage(n)"
+                          Xaspect-ratio="1"
+                          class="grey lighten-2 my-work-img"
+                          @click.stop="showStudentsWorkImage(n)"
+                        >
+                          <template v-slot:placeholder>
+                            <v-row
+                              class="fill-height ma-0"
+                              align="center"
+                              justify="center"
+                            >
+                              <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                            </v-row>
+                          </template>
+                        </v-img>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </v-container>
+              </v-card>
+            </v-col>
+          </v-row>
+
+          <v-row>
+            <v-col cols="12" Xsm="6" Xoffset-sm="3"  class="mt-md-10 mb-md-10">
+              <h2 class="ml-3">My art gallery</h2>
+              <v-card>
+                <v-container fluid>
+                  <v-row>
+                    <v-col
+                      v-for="n in this.state.gallery.myWork.length"
+                      :key="n"
+                      class="d-flex child-flex"
+                      Xcols="2"
+                    >
+                      <v-card flat tile class="d-flex" style="max-width: 200px;">
+                        <v-img
+                          :src="getMyWorkImage(n)"
+                          :lazy-src="getMyWorkImage(n)"
+                          Xaspect-ratio="1"
+                          class="grey lighten-2 my-work-img"
+                          @click.stop="showMyWorkImage(n)"
+                        >
+                          <template v-slot:placeholder>
+                            <v-row
+                              class="fill-height ma-0"
+                              align="center"
+                              justify="center"
+                            >
+                              <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                            </v-row>
+                          </template>
+                        </v-img>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </v-container>
+              </v-card>
+            </v-col>
+          </v-row>
+
+          <v-dialog v-model="galleryDialog" max-width="800">
+            <v-card>
+              <v-btn absolute fab top right color="red"
+              class="mt-10" @click="galleryDialog = false">
+              <v-icon>mdi-close</v-icon>
+            </v-btn>
+              <v-img @click="galleryDialog = false" :src="selectedWorkImageFile"></v-img>
+              <!-- <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="green darken-1"
+                  text
+                  @click="galleryDialog = false"
+                >
+                  Close
+                </v-btn>
+              </v-card-actions> -->
+            </v-card>
+          </v-dialog>
+
+
+
+
+          <!-- <v-row class="ml-md-10">
+            <h1>Meet the teacher</h1>
+            <v-carousel hide-delimiters progress continuous
+            height="200px" progress-color="red">
+              
+              <v-carousel-item
+                reverse-transition="fade-transition"
+                
+                transition="fade-transition"
+                v-for="(item,i) in state.myWorkImageFiles"
+                :key="i"
+                :src="'/images/my-work/' + item"
+              ></v-carousel-item>
+            </v-carousel>
+          </v-row>
+ -->
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </template>
+
+
+  
+  <div id="app">
+    <v-app>
+
+      <v-app-bar app Xinverted-scroll Xcolor="transparent" v-cloak>
+        <img id="app-bar-logo" style="width: 2-px;" src="images/logo-1.png"></img>
+        <v-toolbar-title>
+          <router-link class="toolbar-title" to="/">
+            The Rose Beauty</router-link>
+        </v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-toolbar-items Xclass="ma-0 pa-0">
+          <v-btn @click="$vuetify.goTo('#free-trial')" rounded color="error" dark>Gallery</v-btn>
+          <v-btn @click="$vuetify.goTo('#free-trial')" rounded color="error" dark>Services and price</v-btn>
+          <v-btn @click="$vuetify.goTo('#free-trial')" rounded color="error" dark>Contact</v-btn>
+        </v-toolbar-items>
+        <!-- <v-btn to="/about" icon>
+          <v-icon>info</v-icon>
+        </v-btn> -->
+      </v-app-bar>
+
+      <v-main>
+        <router-view></router-view>
+      </v-main>
+
+      <v-btn v-scroll="onScroll" v-show="fab" v-cloak
+        fab dark fixed bottom right color="primary" 
+        @click="toTop">
+        <v-icon>keyboard_arrow_up</v-icon>
+      </v-btn>      
+
+      <v-footer  class="font-weight-medium" v-cloak>
+        <v-col class="text-center"cols="12">
+          {{ new Date().getFullYear() }} — <strong>The Rose Art Classes</strong>
+        </v-col>
+      </v-footer>
+
+    </v-app>
+  </div>  
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.3.10/dist/vuetify.min.js"></script>
+  <!-- <script type="module"  src="https://cdn.jsdelivr.net/npm/vuetify@2.3.10/lib/util/colorUtils.js"></script> -->
+  <!-- https://cdn.jsdelivr.net/npm/vuetify@2.3.10/lib/util/colorUtils.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue-router@3.4.3/dist/vue-router.min.js"></script>
+  <script src='main.js'></script>
 </body>
 </html>
