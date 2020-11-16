@@ -15,6 +15,8 @@ var store = {
   }
 }
 
+
+
 const Home = Vue.component('Home', {
   template: '#home-template',
   data: function () {
@@ -53,6 +55,24 @@ const Home = Vue.component('Home', {
 
 const About = Vue.component('About', {
   template: '#about-template',
+  data: function () {
+    return {
+      state: store.state,
+    }
+  },
+  methods: {
+  },
+  mounted() {
+    console.log('About mounted');
+  },
+  created() {
+    console.log('About created');
+  }
+})
+
+
+const SectionDivider = Vue.component('section-divider', {
+  template: '#section-divider-template',
   data: function () {
     return {
       state: store.state,

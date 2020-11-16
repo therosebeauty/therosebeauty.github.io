@@ -15,6 +15,19 @@
 </head>
 <body>
 
+  <template id="section-divider-template">
+    <v-row justify="center">
+      <v-img
+        max-width="100"
+        xclass="white--text align-end"
+        xstyle="width: 100px"
+        xheight="200px"
+        src="images/divider-rose.png">
+      </v-img>
+    </v-row>
+  </template>
+
+
   <template id="about-template">
     <v-container fluid grid-list-xl>
       <v-layout>
@@ -41,6 +54,20 @@
             <h1 class="banner-title">The Rose Beauty</h1>
             <h1 class="banner-sub-title">Get Beautified!</h1>
           </v-parallax>
+
+
+          <section-divider></section-divider>
+
+
+          <!-- <v-row justify="center">
+            <v-img
+              max-width="100"
+              xclass="white--text align-end"
+              xstyle="width: 100px"
+              xheight="200px"
+              src="images/temp/divider-rose-7.png">
+            </v-img>
+          </v-row> -->
 
           <v-row Xno-gutters Xfluid>
             <v-col Xcols="3" Xmd="4" Xxs="12" class="mt-10 mb-10">
@@ -115,6 +142,7 @@
             </v-col>
           </v-row>
 
+          <section-divider></section-divider>
 
           <v-row id="price-list" Xalign="center" justify="center">
             <v-card class="ma-3 pa-6">
@@ -266,6 +294,8 @@
       
           </v-row>          
 
+          <section-divider></section-divider>
+
           <v-row id="contact-us">
             <v-col>
               <v-row align="center" justify="center">
@@ -284,6 +314,7 @@
             </v-col>    
           </v-row>
 
+          <section-divider></section-divider>
 
           <v-row id="gallery" Xalign="center" justify="center">
             <h3>Gallery:</h3>
