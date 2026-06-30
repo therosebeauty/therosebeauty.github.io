@@ -1,0 +1,97 @@
+/* body {
+  padding-top: 40px;
+} */
+
+.test-box{
+  height: 500px;
+  background-color: green;
+}
+
+#app-bar-logo{
+  margin-right: 5px;
+}
+
+.my-work-img{
+  height:150px;
+}
+
+.service-desc-title-txt{
+  background-color: #333333;
+  font-size: 28px;
+}
+
+.service-desc-txt div{
+  font-size:22px;
+  line-height: 30px;
+}
+
+.service-desc-txt{
+  margin-top: 20px;
+  min-height: 180px;
+}
+
+.fee-card{
+  min-height: 200px;
+}
+
+.payment-plan-txt{
+  margin-top: 20px;
+  min-height: 80px;
+  min-width: 300px;
+}
+
+.parallax{
+  height: 100%;
+}
+
+.banner-sub-title{
+  font-size: 50px;
+  font-family: cursive;
+  color: black;
+  /* text-shadow: 2px 2px 0px white; */
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(255, 207, 86), 0 0 15px rgb(1, 5, 255);
+
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.banner-title{
+  font-family: 'Pacifico', cursive;
+
+  font-size: 120px;
+  color: red;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(255, 207, 86), 0 0 15px rgb(1, 5, 255);
+  /* text-shadow: 5px 5px 0px black; */
+}
+
+.toolbar-title {
+  text-decoration: inherit;
+  color: white !important;
+  font-weight: bold;
+}
+
+.text--primary{
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-title{
+    font-size: 50px;
+  }
+
+  .banner-sub-title{
+    font-size: 20px;
+  }
+
+  .parallax{
+    max-height: 250px;
+  }
+
+  .service-desc-txt{
+    min-height: auto;
+  }
+  
+  
+}

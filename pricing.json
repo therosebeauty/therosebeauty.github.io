@@ -1,0 +1,57 @@
+{
+  "groups": [
+    {
+      "title": "Bridal & Party",
+      "feature": true,
+      "items": [
+        { "label": "Mehndi (Hands & Legs, both sides)", "price": "from $99" },
+        { "label": "Makeup + Hair (full ready bride)", "price": "$300" },
+        { "label": "Makeup + Hair (Airbrush, full bride)", "price": "$350" },
+        { "label": "Bridesmaid / Party Makeup", "price": "$85" },
+        { "label": "Bridesmaid / Party Hair Style", "price": "$50–$75" },
+        { "label": "Party Makeup + Hair Style", "price": "$150" },
+        { "label": "Party Makeup + Hair (Airbrush)", "price": "$175" },
+        { "label": "Non-Bride Mehndi (one hand, one side)", "price": "from $10" }
+      ],
+      "note": "Visiting charge applies depending on location. Early-morning visits incur an extra charge.*"
+    },
+    {
+      "title": "Facials",
+      "items": [
+        { "label": "Facial (Fruit)", "price": "$45" },
+        { "label": "Facial (Shahnaz Husain — Gold)", "price": "$50" },
+        { "label": "Facial (Shahnaz Husain — Pearl)", "price": "$50" },
+        { "label": "Facial (Shahnaz Husain — Silver)", "price": "$50" },
+        { "label": "Facial (Shahnaz Husain — Diamond)", "price": "$50" }
+      ]
+    },
+    {
+      "title": "Waxing",
+      "items": [
+        { "label": "Full Face", "price": "$25" },
+        { "label": "Hand (half)", "price": "$25" },
+        { "label": "Hand (full)", "price": "$35" },
+        { "label": "Leg (half)", "price": "$35" },
+        { "label": "Leg (full)", "price": "$45" },
+        { "label": "Under Arms", "price": "$15" }
+      ]
+    },
+    {
+      "title": "Threading",
+      "items": [
+        { "label": "Eyebrow", "price": "$10" },
+        { "label": "Upper Lips", "price": "$5" },
+        { "label": "Forehead", "price": "$4" },
+        { "label": "Chin", "price": "$4" },
+        { "label": "Full Face", "price": "from $25" }
+      ]
+    },
+    {
+      "title": "Others",
+      "items": [
+        { "label": "Bleach", "price": "$15" },
+        { "label": "Mehndi Cones", "price": "$5" }
+      ]
+    }
+  ]
+}

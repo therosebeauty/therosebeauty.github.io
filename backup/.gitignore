@@ -1,5 +1,6 @@
 .DS_Store
-images/temp/
+./images/.DS_Store
+./images/temp
 
 # Logs
 logs
