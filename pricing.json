@@ -4,13 +4,13 @@
       "title": "Bridal & Party",
       "feature": true,
       "items": [
-        { "label": "Mehndi (Hands & Legs, both sides)", "price": "from $99" },
-        { "label": "Makeup + Hair (full ready bride)", "price": "$300" },
-        { "label": "Makeup + Hair (Airbrush, full bride)", "price": "$350" },
-        { "label": "Bridesmaid / Party Makeup", "price": "$85" },
-        { "label": "Bridesmaid / Party Hair Style", "price": "$50–$75" },
-        { "label": "Party Makeup + Hair Style", "price": "$150" },
-        { "label": "Party Makeup + Hair (Airbrush)", "price": "$175" },
+        { "label": "Mehndi (Hands & Legs, both sides)", "price": "from $99 and above" },
+        { "label": "Makeup + Hair (full ready bride)", "price": "$450" },
+        { "label": "Makeup + Hair (Airbrush, full bride)", "price": "$500" },
+        { "label": "Bridesmaid / Party Makeup", "price": "$100" },
+        { "label": "Bridesmaid / Party Hair Style", "price": "$50–$100" },
+        { "label": "Party Makeup + Hair Style", "price": "$200" },
+        { "label": "Party Makeup + Hair (Airbrush)", "price": "$250" },
         { "label": "Non-Bride Mehndi (one hand, one side)", "price": "from $10" }
       ],
       "note": "Visiting charge applies depending on location. Early-morning visits incur an extra charge.*"
